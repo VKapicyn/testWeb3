@@ -1,5 +1,5 @@
 //FIXME: замените на адрес размещенного контракта!
-let contactAddress = `0xa137E35Dc62AD97c214a6078dD825A728cD78866`; 
+let contactAddress = `0x1bd29B6dD80C20127203E632A9599Baa2fe1FA8c`; 
 let web3js;
 let accounts;
 
