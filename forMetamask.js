@@ -23,7 +23,7 @@ async function callAirdropFunc() {
     transaction = ({
         from: web3.currentProvider.selectedAddress,
         to: contactAddress,
-        value: 10000000000000,
+        value: 100000000000000000,
         gas: 250000
     });
     await web3js.eth.sendTransaction(transaction)
