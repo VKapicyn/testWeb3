@@ -20,6 +20,7 @@ async function connectMetamask() {
 };
 
 async function callAirdropFunc() {
+    web3js = new Web3(web3.currentProvider);
     transaction = ({
         from: web3.currentProvider.selectedAddress,
         to: contactAddress,
