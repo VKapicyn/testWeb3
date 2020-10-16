@@ -10,16 +10,17 @@ async function connectMetamask() {
     if(!isMetaMaskInstalled()){
         alert('метамаск отсутствует')
     } else {
-        //await window.ethereum.enable();
+        await window.ethereum.enable();
         web3js = new Web3(web3.currentProvider)
-        accounts = await web3js.eth.getAccounts()
+        accounts = web3js.givenProvider.selectedAddress
+        console.log(accounts)
         alert('метамаск подключен')
     }
 };
 
 async function callAirdropFunc() {
     transaction = ({
-        from: accounts[0],
+        from: web3.currentProvider.selectedAddress,
         to: contactAddress,
         value: 10000000000000,
         gas: 250000
