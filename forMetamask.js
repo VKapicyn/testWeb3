@@ -22,7 +22,7 @@ async function callAirdropFunc() {
         to: contactAddress,
         value: 100000000000000000,
         gas: 100000,
-        gasPrice: 5,
+        gasPrice: 500000000,
     });
     await web3js.eth.sendTransaction(transaction)
 }
