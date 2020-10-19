@@ -1,4 +1,4 @@
-let contactAddress = `0xa137E35Dc62AD97c214a6078dD825A728cD78866`; // FIXME: замените на адрес вашего контракта!
+let contactAddress = `0xb752BDBe2AD107B2938c711AffD8b2E8f00b32fB`; // FIXME: замените на адрес вашего контракта!
 let web3js;
 let accounts;
 
